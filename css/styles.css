@@ -1,0 +1,192 @@
+/* style.scss */
+body {
+  background: url("../img/bg.png"); }
+
+#wrapper {
+  position: relative; }
+
+.mts {
+  width: 100%;
+  height: 225px;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  bottom: 0; }
+
+.mt {
+  width: 200%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 225px;
+  z-index: 0; }
+
+.mt-front {
+  background: url("../img/mt-front.png") repeat-x bottom center; }
+
+.mt-mid {
+  background: url("../img/mt-mid.png") repeat-x bottom center; }
+
+.mt-back {
+  background: url("../img/mt-back.png") repeat-x bottom center; }
+
+#container {
+  width: 400px;
+  margin: 0 auto;
+  color: #2B3A42;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  z-index: 100;
+  position: relative;
+  padding-top: 300px;
+  background: rgba(255, 255, 255, 0.9) url("../img/banner.jpg") no-repeat center top; }
+
+h1 {
+  font-family: 'Port Lligat Sans', sans-serif;
+  font-size: 72px;
+  letter-spacing: -2px;
+  margin: 0 0 25px;
+  color: #222;
+  text-align: center; }
+
+p, h2, h3, dl, ul, .footer, .etc {
+  font-family: 'Open Sans', sans-serif; }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin: 16px 0;
+  text-shadow: #eeeeee 0 -1px 0;
+  font-size: 13px;
+  line-height: 20px; }
+
+a {
+  color: #FF530D;
+  text-decoration: none; }
+
+a:hover {
+  color: #AAA; }
+
+h2 {
+  font-size: 18px;
+  color: #3F5765;
+  border-bottom: 1px solid #CCC;
+  margin: 20px 0 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: white 0 -1px 0;
+  background: rgba(189, 212, 222, 0.4);
+  border-radius: 1px;
+  padding: 5px 8px; }
+
+dl {
+  margin: 10px 0;
+  font-size: 12px; }
+
+dt {
+  float: left;
+  width: 50px;
+  text-align: right;
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 5px; }
+
+dt, dd {
+  margin-bottom: 5px; }
+
+h3 {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 15px 0 8px; }
+
+.courses {
+  margin-left: 20px; }
+
+.semester li {
+  font-size: 12px;
+  margin-bottom: 3px; }
+  .semester li span {
+    color: #888;
+    line-height: 16px;
+    width: 50px;
+    text-align: right;
+    margin: 0 5px 3px 0;
+    display: inline-block;
+    font-style: italic; }
+
+.hide {
+  display: none;
+  opacity: 0 !important; }
+
+.irrelevant {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+
+.rel-toggle:hover {
+  cursor: pointer;
+  color: #888; }
+
+.footer {
+  padding: 20px 0 10px;
+  text-align: center;
+  color: #aaa;
+  font-size: 11px; }
+  .footer:hover {
+    color: #666; }
+
+.etc {
+  margin-bottom: 10px; }
+
+.etc:hover .desc {
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+
+.etc:hover .label {
+  border-bottom: 1px solid #ff530d; }
+
+.label {
+  font-weight: 600;
+  font-size: 12px;
+  display: inline-block;
+  padding: 0 8px;
+  line-height: 26px;
+  background: white;
+  border-bottom: 1px solid rgba(255, 83, 13, 0.3); }
+
+.desc {
+  font-size: 12px;
+  display: inline-block;
+  margin: 0 0 0 6px;
+  background: rgba(255, 255, 255, 0.5);
+  color: #888;
+  opacity: 0.7; }
+
+.ext-link {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 2px; }
+
+.ext-link.github {
+  background: url("../img/github.png") no-repeat center center; }
+
+.ext-link.globe {
+  background: url("../img/globe.png") no-repeat center center; }
+
+.time {
+  background: rgba(100, 100, 100, 0.4);
+  color: white;
+  margin-left: 3px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding: 0 4px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 400; }
