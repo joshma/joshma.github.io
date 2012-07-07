@@ -1,3 +1,2 @@
 server_port: 80
 pygments: true
-exclude: [img, js, css]
