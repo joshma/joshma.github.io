@@ -11,10 +11,12 @@ layout: base
 	<div style="clear:both"></div>
 </div>
 <div id="container" class="post">
-	<span class="author">{{ page.author }}</span>
 	{{ content }}
-	<div class="end-post"></div>
-	<div class="footer">personal site of Josh Ma, 2012</div>
+	<p class="author">
+		Posted by <span>{{ page.author }}</span> on {{ page.date | date_to_string }}
+		<span class="end-post"></span>
+	</p>
+	<div class="footer">'designed' by Josh, 2012</div>
 </div>
 <div class="mts">
 	<div class="mt-back mt"></div>

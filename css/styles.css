@@ -134,10 +134,13 @@ h3 {
   color: #888; }
 
 .footer {
-  padding: 20px 0 10px;
+  padding: 20px 0 0;
   text-align: center;
-  color: #aaa;
-  font-size: 11px; }
+  color: #ccc;
+  font-size: 11px;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  transition: color 0.2s ease; }
   .footer:hover {
     color: #666; }
 
@@ -217,13 +220,6 @@ h3 {
     padding: 2px; }
   #container.post em {
     font-style: italic; }
-  #container.post .end-post {
-    width: 10px;
-    height: 10px;
-    background: #444;
-    float: right;
-    display: inline-block;
-    margin-top: -10px; }
 
 .about {
   width: 400px;
@@ -255,4 +251,19 @@ ul.posts {
   ul.posts span {
     color: #888; }
   ul.posts a {
+    margin-left: 5px; }
+
+.author {
+  margin: 10px 0;
+  text-align: right;
+  color: #888;
+  font-size: 11px;
+  font-style: italic; }
+  .author span {
+    color: #222; }
+  .author .end-post {
+    width: 10px;
+    height: 10px;
+    background: #444;
+    display: inline-block;
     margin-left: 5px; }
