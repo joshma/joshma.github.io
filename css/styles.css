@@ -44,6 +44,9 @@ body {
   padding-top: 300px;
   background: rgba(255, 255, 255, 0.9) url("../img/banner.jpg") no-repeat center top; }
 
+.box {
+  margin-left: 10px; }
+
 h1 {
   font-family: 'Port Lligat Sans', sans-serif;
   font-size: 72px;
