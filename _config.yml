@@ -1,2 +1,3 @@
-server_port: 80
+server_port: 8080
 pygments: true
+permalink: /:year/:month/:title.html

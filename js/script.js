@@ -20,13 +20,13 @@ var front = $('.mt-front');
 var mid = $('.mt-mid');
 var back = $('.mt-back');
 var mountainX = function(offset) {
-	front.css('left', -offset/30-winWidthOffset);
-	mid.css('left', -offset/80-winWidthOffset);
+	front.css('left', -offset/50-winWidthOffset);
+	mid.css('left', -offset/100-winWidthOffset);
 	back.css('left', -offset/200-winWidthOffset);
 };
 var mountainY = function(offset) {
-	front.css('bottom', offset/30-10);
-	mid.css('bottom', offset/80);
+	front.css('bottom', offset/50-10);
+	mid.css('bottom', offset/100-10);
 	back.css('bottom', -offset/400);
 };
 

@@ -37,8 +37,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
   z-index: 100;
   position: relative;
   padding-top: 300px;
@@ -60,7 +60,7 @@ p {
   margin: 16px 0;
   text-shadow: #eeeeee 0 -1px 0;
   font-size: 13px;
-  line-height: 20px; }
+  line-height: 21px; }
 
 a {
   color: #FF530D;
@@ -102,7 +102,7 @@ h3 {
   margin: 15px 0 8px; }
 
 .courses {
-  margin-left: 20px; }
+  margin-left: 10px; }
 
 .semester li {
   font-size: 12px;
@@ -190,3 +190,66 @@ h3 {
   font-size: 10px;
   text-transform: uppercase;
   font-weight: 400; }
+
+#container.post {
+  background-image: none;
+  padding-top: 10px; }
+  #container.post h1 {
+    font-size: 36px;
+    letter-spacing: 0;
+    margin: 10px 0 20px; }
+  #container.post .highlight {
+    font-family: 'Ubuntu Mono', Courier New, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 5px 10px;
+    background-color: rgba(220, 220, 220, 0.5); }
+    #container.post .highlight code {
+      background: none; }
+    #container.post .highlight .lineno {
+      color: #999; }
+  #container.post code {
+    font-family: 'Ubuntu Mono', Courier New, sans-serif;
+    background-color: rgba(220, 220, 220, 0.5);
+    padding: 2px; }
+  #container.post em {
+    font-style: italic; }
+  #container.post .end-post {
+    width: 10px;
+    height: 10px;
+    background: #444;
+    float: right;
+    display: inline-block;
+    margin-top: -10px; }
+
+.about {
+  width: 400px;
+  padding: 10px 20px;
+  margin: 0 auto;
+  border-bottom: 2px solid #444;
+  background: url("../img/txture.png"); }
+  .about img {
+    float: left;
+    margin-right: 10px; }
+  .about .text {
+    font-family: 'Open Sans', sans-serif;
+    color: white; }
+  .about .title {
+    padding-top: 20px;
+    margin: 0 0 6px;
+    font-size: 22px;
+    text-shadow: #000 0 1px 0; }
+  .about .subtitle {
+    font-size: 13px;
+    text-shadow: #000 0 1px 0;
+    margin: 0; }
+
+ul.posts {
+  font-size: 12px;
+  margin: 20px 0 10px 10px; }
+  ul.posts li {
+    margin-bottom: 8px; }
+  ul.posts span {
+    color: #888; }
+  ul.posts a {
+    margin-left: 5px; }
