@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python Globals, Locals, and Hippos
-author: Josh Ma
+author: Joshua Ma
 ---
 {{ page.title }}
 ===
