@@ -35,11 +35,11 @@ funcC() # Uh oh, UnboundLocalError: local
 
 What happened here? We had one working function, `funcA()`, and a second one, `funcB()`. We put them together into `funcC()`, and all hell broke loose.
 
-The explanation is actually pretty simple - python will first parse the program, determining scope and catching syntax errors. When it sees the assignment of `global_var = 3` in line 16, it registers that there is a *local* variable, `funcC().global_var`, inside `funcC()`. Strangely enough, this relegates *all* references to `global_var` (within the method) to the local copy, even the reference *before* it at line 15.
+The explanation is actually pretty simple, albeit bizzare - python will first parse the program (without running anything), determining scope and catching syntax errors. When it sees the assignment of `global_var = 3` in line 16, it registers that there is a *local* variable, `funcC().global_var`, inside `funcC()`. Strangely enough, this relegates *all* references to `global_var` (within the method) to the local copy, even the reference *before* it at line 15.
 
-At line 15, then, python sees an attempt to print `global_var`, but as far as it's concerned, `global_var` is a local variable. The catch here, though, is that the local variable hasn't been initialized! And thus, we end up with `UnboundLocalError: local variable 'global_var' referenced before assignment.`
+When it's running the second time through, at line 15 python sees an attempt to print `global_var`. As far as it's concerned, `global_var` is a local variable. The catch here, though, is that the local variable hasn't been initialized! And thus, we end up with `UnboundLocalError: local variable 'global_var' referenced before assignment.`
 
-If you want to both reference and assign to `global_var`, use the `global` keyword:
+If you still want to both reference and assign to `global_var`, use the `global` keyword:
 
 {% highlight python linenos %}
 global_var = 2
