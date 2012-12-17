@@ -13,6 +13,7 @@ $body_padding: 20px;
 
 body {
 	background: url($background);
+    font-size: 12px;
 }
 
 #wrapper {
@@ -70,7 +71,7 @@ body {
 
 h1 {
 	font-family: 'Port Lligat Sans', sans-serif;
-	font-size: 72px;
+    font-size: 6em;
 	letter-spacing: -2px;
 	margin: 0 0 25px;
 	color: #222;
@@ -85,7 +86,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	margin: 16px 0;
 	text-shadow: #EEE 0 -1px 0;
-	font-size: 13px;
+    font-size: 1.1em;
 	line-height: 21px;
 }
 
@@ -99,7 +100,7 @@ a:hover {
 }
 
 h2 {
-	font-size: 18px;
+	font-size: 1.4em;
 	color: #3F5765;
 	border-bottom: 1px solid #CCC;
 	margin: 20px 0 10px;
@@ -113,7 +114,7 @@ h2 {
 
 dl {
 	margin: 10px 0;
-	font-size: 12px;
+    font-size: 1em;
 }
 
 dt {
@@ -130,7 +131,7 @@ dt, dd {
 }
 
 h3 {
-	font-size: 12px;
+    font-size: 1em;
 	font-weight: 700;
 	margin: 15px 0 8px;
 }
@@ -141,7 +142,7 @@ h3 {
 
 .semester {
 	li {
-		font-size: 12px;
+		font-size: 1em;
 		margin-bottom: 3px;
 		span {
 			color: #888;
@@ -175,7 +176,7 @@ h3 {
 	padding: 20px 0 0;
 	text-align: center;
 	color: #ccc;
-	font-size: 11px;
+	font-size: 0.9em;
 	-webkit-transition: color 0.2s ease;
 	-moz-transition: color 0.2s ease;
 	transition: color 0.2s ease;
@@ -324,4 +325,21 @@ ul.posts {
 		display: inline-block;
 		margin-left: 5px;
 	}
+}
+
+@media only screen and (max-device-width: 480px) {
+#container {
+	width: auto;
+}
+.desc {
+    display: block;
+    margin-top: 3px;
+}
+h1 {
+    font-size: 5em;
+}
+.tagline {
+    font-size: 1.5em;
+    line-height: 1.3em;
+}
 }
