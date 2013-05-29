@@ -13,15 +13,21 @@
 			<p>MIT was a fun three years - here's an effort to highlight the technical parts.</p>
 
 			<h2>Splice (<a href="http://splice.josh.ma">splice.josh.ma</a>) <span>6.824 Distributed Systems</span></h2>
+			<a class="extra writeup" href="splice.pdf"></a>
+			<a class="extra github" href="https://github.com/joshma/splice"></a>
 			<p class="partner">Partnered with Somak Das - Go and JavaScript</p>
 			<img src="splice.png" class="project-demo" />
-			<p>Splice is a peer-to-peer, live text editor &agrave; la Etherpad or Google Docs, moving information processing to the participating peers only. A central server is used to serve the initial HTML/JS/CSS assets and broker connections between peers - all further communication is done peer-to-peer over WebRTC (via <a href="http://peerjs.com/">PeerJS</a>). Splice handles operational transforms in a distributed environment, promising eventual consistency, and supports cursor data, user names, and chat. <a href="splice.pdf">Project writeup</a>, <a href="https://github.com/joshma/splice">code on Github</a>.</p>
+			<p>Splice is a peer-to-peer, live text editor &agrave; la Etherpad or Google Docs, moving information processing to the participating peers only. A central server is used to serve the initial HTML/JS/CSS assets and broker connections between peers - all further communication is done peer-to-peer over WebRTC (via <a href="http://peerjs.com/">PeerJS</a>). Splice handles operational transforms in a distributed environment, promising eventual consistency, and supports cursor data, user names, and chat.</p>
 
 			<h2>Octopus <span>6.829 Computer Networks</span></h2>
+			<a class="extra writeup" href="octopus.pdf"></a>
+			<a class="extra github" href="https://github.com/joshma/octopus"></a>
 			<p class="partner">Partnered with Somak Das - ANSI C and Java</p>
-			<p>Octopus is a fork of TightVNC (the old, open source <a href="http://www.tightvnc.com/download-old.php">1.3 version</a>) that improves on VNC's RFB protocol under poor network conditions. Octopus is resilient to <strong>high latency</strong> (actively pushes frames to client instead of waiting for client requests), <strong>high loss rates</strong> (lossy transport over UDP is combined with intelligent retransmissions), and <strong>varying bandwidth</strong> (adapts quality and framerate to match sampled bandwidth). Writing in ANSI C can be a nostalgic experience. <a href="octopus.pdf">Project writeup</a>, <a href="https://github.com/joshma/octopus">code on Github</a>.</p>
+			<p>Octopus is a fork of TightVNC (the old, open source <a href="http://www.tightvnc.com/download-old.php">1.3 version</a>) that improves on VNC's RFB protocol under poor network conditions. Octopus is resilient to <strong>high latency</strong> (actively pushes frames to client instead of waiting for client requests), <strong>high loss rates</strong> (lossy transport over UDP is combined with intelligent retransmissions), and <strong>varying bandwidth</strong> (adapts quality and framerate to match sampled bandwidth). Writing in ANSI C can be a nostalgic experience.</p>
 
 			<h2>Polymerase <span>6.UAP Senior Project</span></h2>
+			<a class="extra writeup" href="polymerase.pdf"></a>
+			<a class="extra github" href="https://github.com/joshma/polymerase"></a>
 			<p class="partner">Good ol' Java</p>
 			<p>Polymerase is a Java library to add Paxos-based replication across a set of servers. It works by instantiating a <code>Replicator</code> that takes in (serializable) objects and returns replicated proxies. Any method calls on the returned objects are automatically replicated across all configured servers - Paxos ensures reliability and consistency even under failure of (a minority of) servers.</p>
 			<p>Replicated method calls are applied in a consistent order across all servers. Polymerase uses a log-and-play approach to achieve consistency. Further mechanisms allow for finer-grained serialization controls. <code>@AllowStale</code> is a decorator on methods to allow best-effort calls without first waiting for the object to become up to date. By default, consistent serialization is enforced across <em>all</em> method calls - <code>@InstanceParallel</code> and <code>@ClassParallel</code> decorators allow parallelization at the instance and class levels, respectively.</p>
@@ -31,6 +37,7 @@
 			<p>We implemented process migration in JOS, a lightweight exokernel operating system. A migration daemon runs in the background, and an accompanying user-level binary initiates the migration by taking in a process ID and a target host. The process is frozen, and its state (including call statck and allocated memory) is transferred to the new host where it is resumed. Our implementation of process migration allows for shared memory between local and migrated processes as well as remote, forwarded system calls from migrated processes.</p>
 
 			<h2>Starbucks <span>6.035 Compilers</span></h2>
+			<a class="extra github" href="https://github.com/joshma/starbucks"></a>
 			<p class="partner">Java</p>
 			<p>Starbucks is a Decaf (think Java, but simplified) compiler written in Java. It actually outputs to <a href="http://nasm.us/">NASM</a> syntax, where it's compiled and linked. Optimizations include dead code elimination, common subexpression elimination, copy propagation, register coloring, algebraic simplification, and loop unrolling.</p>
 
@@ -42,9 +49,8 @@
 						<li><span>6.824</span> Distributed Systems</li>
 						<li><span>6.829</span> Computer Networks</li>
 						<li><span>6.207</span> Networks</li>
-						<li><span>6.041</span> Probabilistic Systems Analysis</li>
+						<li><span>6.UAP</span> Undergraduate Advanced Project</li>
 						<li><span>6.170</span> Web Software Studio (TA)</li>
-						<li class="irrelevant" style="display: list-item;"><span>6.UAP</span> Undergraduate Advanced Project</li>
 					</ul>
 				</li>
 				<li>

@@ -29,7 +29,7 @@ a, a:visited {
 }
 
 .content {
-	width: 500px;
+	width: 720px;
 	margin: 0 auto;
 }
 
@@ -131,4 +131,21 @@ h2 span {
 	width: 500px;
 	text-align: center;
 	margin: 0 auto;
+}
+
+.extra {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	float: left;
+	margin-left: -34px;
+	margin-bottom: 3px;	
+	clear: both;
+	opacity: 0.7;
+}
+.extra.writeup {
+	background: url('file.png') no-repeat center;
+}
+.extra.github {
+	background: url('github.png') no-repeat center;
 }
